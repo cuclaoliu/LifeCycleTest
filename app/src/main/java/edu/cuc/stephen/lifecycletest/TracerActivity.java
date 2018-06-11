@@ -15,6 +15,22 @@ public class TracerActivity extends Activity {
     protected String textColor = "#EE0000";
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        String msg = String.valueOf(nToasts) + ". onStart()";
+        notify(msg);
+        createToast(msg);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        String msg = String.valueOf(nToasts) + ". onRestart()";
+        notify(msg);
+        createToast(msg);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String msg = String.valueOf(nToasts) + ". onCreate()";
