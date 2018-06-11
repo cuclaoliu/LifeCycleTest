@@ -6,10 +6,12 @@
     android:gravity="center_vertical">
 
     <TextView
-        android:id="@+id/label"
+        android:id="@+id/label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Main Activity!"
+        android:text="@string/title_activity_main"
+        android:drawableTop="@drawable/chen"
+        android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"/>
     
     <Button
@@ -17,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="start second activity"/>
+        android:text="@string/start_second_activity"/>
 
 
 </LinearLayout>
