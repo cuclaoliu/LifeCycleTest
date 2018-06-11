@@ -9,6 +9,7 @@ public class MainActivity extends TracerActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        textColor = "#EEEEEE";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -16,7 +17,7 @@ public class MainActivity extends TracerActivity{
         startSecondActivityButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
         });
